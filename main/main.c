@@ -2,7 +2,7 @@
 ********** Archivo fuente .c para configurar UART e interrupciones  **********
 ******************************************************************************/
 
-
+//Prueba romoto
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -131,8 +131,6 @@ void tarea1(void *Para){
 	}
 }
 
-//#include "UARTconfig.h"
-//#include "ledBLINK.h"
 void app_main(){
 	iniciarUART();
 	xTaskCreate(tarea1, "led_BLINK", 1024*2, NULL, 5, NULL);
